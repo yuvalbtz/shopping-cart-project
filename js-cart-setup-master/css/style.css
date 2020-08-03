@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+*{
+  margin: 0em;
+  padding: 0em;
+}
+
+:root {
+  --mainPink: #4d504b;
+  --mainYellow: rgb(148, 249, 165);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(139, 231, 136, 0.945);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+
+
+
+
+
+.headline-product{
+
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.cart-header{
+
+font-weight: bold;
+font-size: 1.2em;
+color: #333;
+
+}
+
+
+
+
+.cart-column{
+display: flex;
+align-items: center;
+
+ 
+border-bottom: 1px solid black;
+margin-right: 1.5em;
+padding-bottom: 10px;
+margin-top: 4em;
+height: 65px;
+}
+
+.cart-row{
+
+  
+display: flex;
+
+ 
+}
+
+
+.cart-item{
+width: 45%;
+
+}
+
+.cart-price{
+width: 20%;
+
+}
+.cart-quantity{
+width: 35%;
+
+
+}
+
+.cart-item-title{
+  color: #333;
+  margin-left: .5em;
+  font-size: 15px;
+  margin-bottom: 4em;
+  
+}
+
+.cart-item-image{
+
+  height: 70px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.btn-danger{
+  height: 34px;
+  width: 80px;
+}
+
+.cart-quantity-input{
+  text-align: center;
+  height: 34px;
+  width: 50px;
+  
+}
+
+.section-header{
+text-align: center;
+font-weight: bold;
+border-bottom: 2px solid black;
+}
+
+
+.cart-total-title{
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+}
+
+.cart-total{
+   
+  margin-top: 1.5em;
+}
+
+
+.cart-total-price{
+  font-size: 1.5em;
+
+}
+
+
+
+#store-items{
+position: relative;
+margin: 0px;
+
+}
+
+
+
+
+
+/* nav links */
+.navbar-toggler {
+  outline: none !important;
+ 
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainPink);
+  
+}
+.nav-link {
+  color: var(--mainPink);
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+/* end of nav links */
+/* info icons */
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+/* end of info icons */
+/* banner */
+
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url("../img/image-juice.png") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+  
+}
+.banner-title {
+  color: rgb(57, 160, 57);
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainBlack);
+  color:white;
+}
+/* endo of banner */
+/* cart  */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: var(--mainWhite);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* end of cart */
+/* cart item */
+.cart-item-remove {
+  color: var(--mainPink);
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+#cart-item-price {
+  font-size: 1.2rem;
+}
+/* cart item */
+/* cart buttons */
+.btn-pink {
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
+}
+.btn-black {
+  position: relative;
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+  
+}
+.btn-black:hover {
+  color: var(--mainPink) !important;
+ background-color: rgb(91, 231, 138);
+}
+.btn-pink:hover {
+  background: var(--mainPink) !important;
+  color: var(--mainBlack) !important;
+}
+/* end of cart buttons */
+
+/* about */
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/*end of  about */
+
+/* store items */
+.store {
+  background: var(--mainGrey);
+}
+.img-container {
+  
+  height: 180px;
+  width: 60px;
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  right:20px;
+ 
+}
+
+
+
+.store-item-icon {
+  position: relative;
+  bottom: 0px;
+  left: -130px;
+  top: -10px;
+  width: 120px;
+  margin: 0px;
+  padding:0.6rem;
+  background: var(--mainYellow);
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+  transform: translate(100%, 100%);
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.store-item-icon:hover {
+  color: var(--mainWhite);
+  
+}
+
+
+.store-item-name{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.store-item-value{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  left: -4px;
+}
+
+
+
+
+
+
+
+/*end of  store items */
+.search-box {
+  background: var(--mainPink);
+  color: var(--mainBlack);
+}
+
+/* ligthbox */
+
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.lightbox-holder {
+  position: relative;
+}
+.lightbox-item {
+  min-height: 80vh;
+  background: url("../img/cake-1.jpeg") center/cover fixed no-repeat;
+  border-radius: 0.3rem;
+}
+.lightbox-close {
+  color: var(--mainPink);
+  font-size: 3rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.lightbox-close:hover {
+  color: var(--mainYellow);
+}
+
+.lightbox-control {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--mainPink);
+  transition: all 1s linear;
+  cursor: pointer;
+}
+.lightbox-control:hover {
+  color: var(--mainYellow);
+}
+.btnLeft {
+  top: 50%;
+  left: 0;
+  transform: translateX(-60%);
+}
+.btnRight {
+  top: 50%;
+  right: 0;
+  transform: translateX(60%);
+}
+
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.item-detailes{
+  position: relative;
+  text-align: center;
+}
+
+
+.expired-item{
+  text-align: right;
+}

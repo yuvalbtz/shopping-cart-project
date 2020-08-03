@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+  
+
+ <!-- script js -->
+ <script src="js/app.js" async></script>
+
+
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Cart Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+    <!-- 
+https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+Creative Commons (Attribution 3.0 Unported);
+https://www.iconfinder.com/korawan_m
+     -->
+    <nav class="navbar fixed-top navbar-expand-lg p-1 m-0 bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      
+      <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5 scrollToBottom" >
+        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+        <font size = "+1"> <p class="mb-0 text-capitalize"><span class="item-count">0</span> מוצרים בעגלה -  ₪<span class="item-total"> 0 </span></p></font>
+      </div>
+     
+     
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">דף הבית</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">עלינו</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">חנות</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 123 456 789</p>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+        </div>
+         
+          <!-- end of single info -->
+        
+      </div>
+    
+    </nav>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">ברוכים הבאים <strong class="banner-title ">מיצי קשת בגולן</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">למיצים שלנו ! </a>
+
+        </div>
+       
+        
+        
+        
+        
+        
+        
+       
+      
+      
+      
+      
+      </div>
+    </div>
+
+
+
+
+    <!--end of  banner  -->
+  </header>
+  <!-- header -->
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">שמעו  <strong class="banner-title ">עלינו !</strong></h1>
+          <p class="my-4 text-muted w-75">בין מטעים מוריקים ומרעננים, תחת כיפת השמיים המביאה אלינו את ברכת השמש המחממת וטיפות הגשם המחיות, עומל ושוקד מפעלנו להפקת מיץ פרי טבעי, בשיטות חדשניות וייחודיות.
+          </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">לחצו כאן !</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/image-apple.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of about us -->
+
+
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+     <img src="img/image-family.png" alt="" width="200">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">החנות <strong class="banner-title ">שלנו</strong></h1>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!--filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> מיץ התפוחים שלנו</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">מיץ גזר ותפוחים</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">מיץ רימונים טבעי</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">מיץ פסיפלורה ותפוחים</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">מיץ לימון ותפוחים טבעי</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">מיץ סלק ותפוחים</a>
+        </div>
+      </div>
+      <!-- search box -->
+      <div class="row">
+
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='item....' id="search-item">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+<!---------------------------------------------------------------------------------------------->
+
+          
+<div class="product-type bg-dark" >
+
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes">
+          <h2 class="headline-product">מיצי התפוחים שלנו</h2>
+          <div>
+          <img  src="img/apples headline.jpg" alt="" class="card-img-top store-img" width="200">
+        </div>
+        
+      </div> 
+        
+      
+      <hr class="bg-light"> 
+     
+      
+      
+<!---------------------------------------------------------------------------------------------->
+      
+      
+      
+      
+      
+      <!--end of filter buttons -->
+      <!-- store  items-->
+      <div class="row" class="store-items" id="store-items">
+        
+        
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <span class="item-detailes">
+            <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong> תפוחים טבעיים וזהו!</span></p>
+            <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+            <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+            <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 18 תפוחים טריים ומובחרים</strong></span></p>
+            <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+            <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>45 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong>10.5 ג' <strong>/ </strong></span></p>
+            <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong>22 מ"ג</span></p>
+            <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+            </span>
+            <div class="img-container">
+              <img src="img/apple-juice1.jpg" class="card-img-top store-img" alt="">
+             
+            </div>
+
+             
+           
+           
+           
+           
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ תפוחים בפלסטיק בגודל 2 ליטרים</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                </div>
+                <div class="expired-item"><strong>תוקפו עד שלושה שבועות</strong></div>
+              </div>
+          </div>
+          
+        </div>
+       
+       
+       
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong> תפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 9 תפוחים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>45 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong>10.5 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong>22 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+             
+              <div class="img-container">
+                <img src="img/organi_image.png" style="position: relative; left: 14px; " alt="">
+                <img src="img/apple-juice2.jpg" class="card-img-top store-img" alt="" >
+               
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ תפוחים בזכוכית בגודל 1 ליטר</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+              </div>
+              <div class="expired-item"><strong>תוקפו עד שנה וחצי</strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong> תפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 5 תפוחים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>45 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong>10.5 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong>22 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple-juice3.jpg" class="card-img-top store-img" alt="">
+             
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name"> מיץ תפוחים בפלסטיק בגודל 330 מ"ל</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong> תוקפו עד חצי שנה  </strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong> תפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 5 תפוחים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>45 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong>10.5 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong>22 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple-juice4.jpg" class="card-img-top store-img" alt="">
+              
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name"> מיץ תפוחים בפלסטיק בגודל 0.5 ליטר</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד שנה</strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong> תפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 5 תפוחים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>45 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong>10.5 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong>22 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple-juice5.jpg" class="card-img-top store-img" alt="">
+             
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name"> מיץ תפוחים בפלסטיק בגודל 1 ליטרים</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong> תוקפו עד חצי שנה  </strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong> תפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 5 תפוחים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>45 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong>10.5 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong>22 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple-juice6.jpg" class="card-img-top store-img" alt="">
+              
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ תפוחים בזכוכית בגודל 250 מ"ל</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד שנה </strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+      </div>
+       
+    </div>
+<!---------------------------------------------------------------------------------------------->
+
+<div class="product-type bg-dark" >
+
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes">
+         <h2 class="headline-product">מיצי גזר ותפוחים</h2>
+         
+         <div>
+         <img src="img/cARROT AND APPLAES HEADLINE.jpg" alt="" class="card-img-top store-img" width="200">
+        <hr>  
+      </div>
+      </div>
+       
+<hr class="bg-light">
+
+
+<!---------------------------------------------------------------------------------------------->
+
+      
+
+      <div class="row" class="store-items" id="store-items">
+        
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <span class="item-detailes">
+              
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>גזר ותפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 3 תפוחים  ו - 4 גזרים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong> 40 קלוריות <strong> / חלבון – </strong>0.3 ג'<strong>/ פחמימות – </strong>9.6 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0.5 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong> 29 מ"ג<strong>/ בטא קרוטן –</strong> 11.6 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple and carrot - juice1.png" class="card-img-top store-img" alt="">
+             
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ גזר ותפוחים זכוכית בגודל 1 ליטר</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד 5 חודשים</strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+       
+       
+       
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <span class="item-detailes">
+              
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>גזר ותפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 3 תפוחים  ו - 4 גזרים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong> 40 קלוריות <strong> / חלבון – </strong>0.3 ג'<strong>/ פחמימות – </strong>9.6 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0.5 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong> 29 מ"ג<strong>/ בטא קרוטן –</strong> 11.6 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple and carrot - juice2.png" class="card-img-top store-img" alt="">
+             
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ גזר ותפוחים זכוכית בגודל 0.5 ליטר</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד 5 חודשים</strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <span class="item-detailes">
+              
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>גזר ותפוחים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 3 תפוחים  ו - 4 גזרים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong> 40 קלוריות <strong> / חלבון – </strong>0.3 ג'<strong>/ פחמימות – </strong>9.6 ג' <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0.5 ג' <strong>/ כולסטרול – </strong>0 ג' <strong>/ נתרן – </strong> 29 מ"ג<strong>/ בטא קרוטן –</strong> 11.6 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/apple and carrot - juice3.png" class="card-img-top store-img" alt="">
+              
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ גזר ותפוחים זכוכית בגודל 250 מ"ל </h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד 5 חודשים</strong></div>
+            </div>
+          </div>
+       
+        </div>   
+      </div>   
+
+    </div>
+<!---------------------------------------------------------------------------------------------->
+<div class="product-type bg-dark">
+
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes">
+  <h2 class="headline-product">מיצי רימונים</h2>
+ <div>
+  <img src="img/RIMONIM HEADLINE.jpg" alt="" class="card-img-top store-img" width="200">
+</div>
+  <hr>  
+</div>
+
+<hr class="bg-light">       
+       
+<!---------------------------------------------------------------------------------------------->
+
+
+
+     <div class="row" class="store-items" id="store-items">
+       
+      <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets" >
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>רימונים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 5 רימונים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>55 קלוריות <strong> / חלבון – </strong>0.25 ג'<strong>/ פחמימות – </strong>13.5 ג'  <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>3 מ"ג <strong>/ ברזל – </strong>0.11 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/Rimonim - juice1.png" class="card-img-top store-img" alt="">
+              
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ רימונים זכוכית בגודל 0.5 ליטר</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד שנה</strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+       
+       
+       
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <span class="item-detailes">
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>רימונים טבעיים וזהו!</span></p>
+              <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+              <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מכ - 5 רימונים טריים ומובחרים</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>55 קלוריות <strong> / חלבון – </strong>0.25 ג'<strong>/ פחמימות – </strong>13.5 ג'  <strong>/ </strong></span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>3 מ"ג <strong>/ ברזל – </strong>0.11 מ"ג</span></p>
+              <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+              </span>
+            <div class="img-container">
+              <img src="img/Rimonim - juice2.png" class="card-img-top store-img" alt="">
+              
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 class="store-item-name">מיץ רימונים זכוכית בגודל 250 מ"ל</h5>
+                <div class="store-item-icon">הוסף לסל
+                  <i class="fas fa-shopping-cart"></i>
+              </div>
+                <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+              <div class="expired-item"><strong>תוקפו עד שנה</strong></div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+       
+      </div>      
+     
+    </div>
+       
+ <!---------------------------------------------------------------------------------------------->
+
+ <div class="product-type bg-dark">
+
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes">
+  <h2 class="headline-product">מיצי פסיפלורה ותפוחים</h2>
+ <div style="display: flex; justify-content: center; align-items: center; background-color: white; height: 208px;border-radius: 5px;">
+  <img src="img/paciflora and apple headline.png" alt=""  width="60" height="108">
+</div>
+  <hr>  
+</div>
+       
+<hr class="bg-light">       
+<!---------------------------------------------------------------------------------------------->
+
+       
+ 
+
+ <div class="row" class="store-items" id="store-items">
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>פסיפלורה ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 4 תפוחים ו – 3 פסיפלורה טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>47 קלוריות<strong> / חלבון – </strong>0.2 ג'<strong>/ פחמימות – </strong>11.9 ג' <strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>39.4 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Paciflora and apple - juice1.png" class="card-img-top store-img" alt="">
+        
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ פסיפלורה ותפוחים זכוכית בגודל 0.5 ליטר </h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד 6 חודשים</strong></div>
+      </div>
+
+
+    </div>
+    <!-- end of card-->
+  </div>
+ 
+ 
+ 
+  <!--end of single store item-->
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>פסיפלורה ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 4 תפוחים ו – 3 פסיפלורה טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>47 קלוריות<strong> / חלבון – </strong>0.2 ג'<strong>/ פחמימות – </strong>11.9 ג' <strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>39.4 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Paciflora and apple - juice2.png" class="card-img-top store-img" alt="">
+       
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ פסיפלורה ותפוחים זכוכית בגודל 250 מ"ל</h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד 6 חודשים</strong></div>
+      </div>
+
+
+    </div>
+    <!-- end of card-->
+  </div>
+ 
+</div>      
+
+</div>
+ 
+<!---------------------------------------------------------------------------------------------->      
+       
+<div class="product-type bg-dark">
+
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes">
+  <h2 class="headline-product">מיצי לימון ותפוחים</h2>
+ <div>
+  <img src="img/Lemon and apple headline.jpg" alt="" class="card-img-top store-img"  width="200">
+</div>
+  <hr>  
+</div>
+       
+<hr class="bg-light">       
+       
+<!---------------------------------------------------------------------------------------------->      
+       
+       
+       
+<div class="row" class="store-items" id="store-items">
+ 
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>לימונים ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מלימונים ותפוחים טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>42 קלוריות <strong> / חלבון – </strong>0.2 ג'<strong>/ פחמימות – </strong>10.2 ג' <strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>24 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Lemon and apple - juice1.png" class="card-img-top store-img" alt="">
+       
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ לימון ותפוחים פלסטיק בגודל 1 ליטר</h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד חצי שנה</strong></div>
+      </div>
+
+
+    </div>
+    <!-- end of card-->
+  </div>
+ 
+ 
+ 
+  <!--end of single store item-->
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>לימונים ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מלימונים ותפוחים טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>42 קלוריות <strong> / חלבון – </strong>0.2 ג'<strong>/ פחמימות – </strong>10.2 ג' <strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>24 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Lemon and apple - juice2.png" class="card-img-top store-img" alt="">
+       
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ לימון ותפוחים פלסטיק בגודל 330 מ"ל</h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד חצי שנה</strong></div>
+      </div>
+
+
+    </div>
+    <!-- end of card-->
+  </div>
+  <!--end of single store item-->
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>לימונים ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מלימונים ותפוחים טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>42 קלוריות <strong> / חלבון – </strong>0.2 ג'<strong>/ פחמימות – </strong>10.2 ג' <strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>24 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Lemon and apple - juice3.png" class="card-img-top store-img" alt="">
+       
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ לימון ותפוחים זכוכית בגודל 250 מ"ל</h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד חצי שנה</strong></div>
+      </div>
+    </div>
+ 
+  </div>   
+</div>        
+</div>      
+<!---------------------------------------------------------------------------------------------->      
+    
+ <!---------------------------------------------------------------------------------------------->      
+       
+<div class="product-type bg-dark">
+ 
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes">
+  <h2 class="headline-product">מיצי סלק ותפוחים</h2>
+  <div>
+  <img src="img/Selek and apples headline.jpg" alt="" class="card-img-top store-img" width="200">
+</div>
+ <hr>  
+</div>
+       
+<hr class="bg-light">      
+       
+<!---------------------------------------------------------------------------------------------->           
+       
+<div class="row" class="store-items" id="store-items">
+  
+  
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>סלק ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 5 תפוחים ו - 5 סלקים טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>26 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong> 6.2 ג'<strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>68 מ"ג<strong>/ ברזל – </strong> 0.12 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Selek and apple-juice1.png" class="card-img-top store-img" alt="">
+       
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ סלק ותפוחים זכוכית בגודל 1 ליטר</h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד 9 חודשים</strong></div>
+      </div>
+
+
+    </div>
+    <!-- end of card-->
+  </div>
+ 
+ 
+ 
+  <!--end of single store item-->
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>סלק ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 5 תפוחים ו - 5 סלקים טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>26 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong> 6.2 ג'<strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>68 מ"ג<strong>/ ברזל – </strong> 0.12 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Selek and apple-juice2.png" class="card-img-top store-img" alt="">
+       
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <h5 class="store-item-name">מיץ סלק ותפוחים זכוכית בגודל 0.5 ליטר</h5>
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+          <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד 9 חודשים</strong></div>
+      </div>
+
+
+    </div>
+    <!-- end of card-->
+  </div>
+  <!--end of single store item-->
+  <!-- single item -->
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+    <div class="card ">
+      <span class="item-detailes">
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>מכיל:</strong>סלק ותפוחים טבעיים וזהו!</span></p>
+        <span style="font-family: arial, helvetica, sans-serif;"><strong>ללא </strong>תוספת סוכר, <strong>ללא </strong>תוספת מים, </span>
+        <span style="font-family: arial, helvetica, sans-serif;"><br><strong>ללא </strong>צבעי מאכל<strong> וללא </strong>חומרים משמרים.</span>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>רק מיץ טבעי שנסחט מ - 5 תפוחים ו - 5 סלקים טריים ומובחרים</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>סימון תזונתי ל 100 מ"ל:</strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>אנרגיה – </strong>26 קלוריות<strong> / חלבון – </strong>0.1 ג' <strong>/ פחמימות – </strong> 6.2 ג'<strong>/ </strong></span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>שומן – </strong>0 ג'<strong>/ כולסטרול – </strong>0 ג'<strong>/ נתרן – </strong>68 מ"ג<strong>/ ברזל – </strong> 0.12 מ"ג</span></p>
+        <p><span style="font-family: arial, helvetica, sans-serif;"><strong>להגיש צונן!&nbsp;</strong>יש לנער לפני השימוש ולאחר הפתיחה לשמור בקירור עד 5 ימים.<br></span></p>
+        </span>
+      <div class="img-container">
+        <img src="img/Selek and apple-juice3.png" class="card-img-top store-img" alt="">
+       
+      </div>
+    
+     
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between text-capitalize">
+          <div>
+          <h5 class="store-item-name">מיץ סלק ותפוחים זכוכית בגודל 250 מ"ל</h5>
+        </div> 
+          <div class="store-item-icon">הוסף לסל
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+       
+        <h5 class="store-item-value">₪<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+        </div>
+        <div class="expired-item"><strong>תוקפו עד 9 חודשים</strong></div>
+      </div>
+    </div>
+ 
+  </div>   
+</div>           
+  
+</div>
+
+       
+<!---------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <!--end of single store item-->
+        <!-- single item -->
+       
+        <!--end of single store item-->
+        <!-- single item -->
+        
+        <!--end of single store item-->
+        <!-- single item -->
+       
+        <!--end of single store item-->
+
+     
+  </section>
+  <!--end of store items -->
+
+
+  <!-- modal-container -->
+  <div class="container-fluid ">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+      </div>
+
+    </div>
+  </div>
+
+
+ 
+
+  <!-------------------------------nav price----------------------------->
+ 
+   <section class="container content-section">
+    <h2 class="section-header">סל המוצרים </h2>
+    <div class="cart-row">
+     <span class="cart-item cart-header cart-column">מוצר</span>
+     <span class="cart-price cart-header cart-column">מחיר</span>
+     <span class="cart-quantity cart-header cart-column">כמות</span>
+    </div>
+    
+    <div class="cart-items">
+   
+
+<!--------------------------------------------------------------------------------------->
+
+
+
+
+</div>
+
+
+
+<div class="cart-total">
+<strong class="cart-total-title">סה"כ מחיר לתשלום : </strong>
+<span class="cart-total-price">₪0</span>
+</div>
+
+
+<div>
+  <button class="btn-buy" type="button">שלם עם גוגל פיי</button>
+</div>
+
+<div id="container">
+  
+<script>
+ 
+ /**
+ * Define the version of the Google Pay API referenced when creating your
+ * configuration
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|apiVersion in PaymentDataRequest}
+ */
+const baseRequest = {
+  apiVersion: 2,
+  apiVersionMinor: 0
+};
+
+/**
+ * Card networks supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm card networks supported by your site and gateway
+ */
+const allowedCardNetworks = ["AMEX", "DISCOVER", "JCB", "MASTERCARD", "VISA"];
+
+/**
+ * Card authentication methods supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm your processor supports Android device tokens for your
+ * supported card networks
+ */
+const allowedCardAuthMethods = ["PAN_ONLY", "CRYPTOGRAM_3DS"];
+
+/**
+ * Identify your gateway and your site's gateway merchant identifier
+ *
+ * The Google Pay API response will return an encrypted payment method capable
+ * of being charged by a supported gateway after payer authorization
+ *
+ * @todo check with your gateway on the parameters to pass
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#gateway|PaymentMethodTokenizationSpecification}
+ */
+const tokenizationSpecification = {
+  type: 'PAYMENT_GATEWAY',
+  parameters: {
+    'gateway': 'example',
+    'gatewayMerchantId': 'exampleGatewayMerchantId'
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method and its required
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const baseCardPaymentMethod = {
+  type: 'CARD',
+  parameters: {
+    allowedAuthMethods: allowedCardAuthMethods,
+    allowedCardNetworks: allowedCardNetworks
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method including optional
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const cardPaymentMethod = Object.assign(
+  {},
+  baseCardPaymentMethod,
+  {
+    tokenizationSpecification: tokenizationSpecification
+  }
+);
+
+/**
+ * An initialized google.payments.api.PaymentsClient object or null if not yet set
+ *
+ * @see {@link getGooglePaymentsClient}
+ */
+let paymentsClient = null;
+
+/**
+ * Configure your site's support for payment methods supported by the Google Pay
+ * API.
+ *
+ * Each member of allowedPaymentMethods should contain only the required fields,
+ * allowing reuse of this base request when determining a viewer's ability
+ * to pay and later requesting a supported payment method
+ *
+ * @returns {object} Google Pay API version, payment methods supported by the site
+ */
+function getGoogleIsReadyToPayRequest() {
+  return Object.assign(
+      {},
+      baseRequest,
+      {
+        allowedPaymentMethods: [baseCardPaymentMethod]
+      }
+  );
+}
+
+/**
+ * Configure support for the Google Pay API
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|PaymentDataRequest}
+ * @returns {object} PaymentDataRequest fields
+ */
+function getGooglePaymentDataRequest() {
+  const paymentDataRequest = Object.assign({}, baseRequest);
+  paymentDataRequest.allowedPaymentMethods = [cardPaymentMethod];
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+  paymentDataRequest.merchantInfo = {
+    // @todo a merchant ID is available for a production environment after approval by Google
+    // See {@link https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist|Integration checklist}
+     merchantId: '01234567890123456789',
+    merchantName: 'Example Merchant'
+  };
+
+  paymentDataRequest.callbackIntents = ["SHIPPING_ADDRESS",  "SHIPPING_OPTION", "PAYMENT_AUTHORIZATION"];
+  paymentDataRequest.shippingAddressRequired = true;
+  paymentDataRequest.shippingAddressParameters = getGoogleShippingAddressParameters();
+  paymentDataRequest.shippingOptionRequired = true;
+
+  return paymentDataRequest;
+}
+
+/**
+ * Return an active PaymentsClient or initialize
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#PaymentsClient|PaymentsClient constructor}
+ * @returns {google.payments.api.PaymentsClient} Google Pay API client
+ */
+function getGooglePaymentsClient() {
+  if ( paymentsClient === null ) {
+    paymentsClient = new google.payments.api.PaymentsClient({
+      environment: "TEST",
+      merchantInfo: {
+        merchantName: "Example Merchant",
+        merchantId: "01234567890123456789"
+      },
+      paymentDataCallbacks: {
+        onPaymentAuthorized: onPaymentAuthorized,
+        onPaymentDataChanged: onPaymentDataChanged
+      }
+    });
+  }
+  return paymentsClient;
+}
+
+
+function onPaymentAuthorized(paymentData) {
+  return new Promise(function(resolve, reject){
+
+  // handle the response
+  processPayment(paymentData)
+    .then(function() {
+      resolve({transactionState: 'SUCCESS'});
+    })
+    .catch(function() {
+        resolve({
+        transactionState: 'ERROR',
+        error: {
+          intent: 'PAYMENT_AUTHORIZATION',
+          message: 'Insufficient funds',
+          reason: 'PAYMENT_DATA_INVALID'
+        }
+      });
+    });
+
+  });
+}
+
+/**
+ * Handles dynamic buy flow shipping address and shipping options callback intents.
+ *
+ * @param {object} itermediatePaymentData response from Google Pay API a shipping address or shipping option is selected in the payment sheet.
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#IntermediatePaymentData|IntermediatePaymentData object reference}
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentDataRequestUpdate|PaymentDataRequestUpdate}
+ * @returns Promise<{object}> Promise of PaymentDataRequestUpdate object to update the payment sheet.
+ */
+function onPaymentDataChanged(intermediatePaymentData) {
+  return new Promise(function(resolve, reject) {
+
+    let shippingAddress = intermediatePaymentData.shippingAddress;
+    let shippingOptionData = intermediatePaymentData.shippingOptionData;
+    let paymentDataRequestUpdate = {};
+
+    if (intermediatePaymentData.callbackTrigger == "INITIALIZE" || intermediatePaymentData.callbackTrigger == "SHIPPING_ADDRESS") {
+      if(shippingAddress.administrativeArea == "NJ")  {
+        paymentDataRequestUpdate.error = getGoogleUnserviceableAddressError();
+      }
+      else {
+        paymentDataRequestUpdate.newShippingOptionParameters = getGoogleDefaultShippingOptions();
+        let selectedShippingOptionId = paymentDataRequestUpdate.newShippingOptionParameters.defaultSelectedOptionId;
+        paymentDataRequestUpdate.newTransactionInfo = calculateNewTransactionInfo(selectedShippingOptionId);
+      }
+    }
+    else if (intermediatePaymentData.callbackTrigger == "SHIPPING_OPTION") {
+      paymentDataRequestUpdate.newTransactionInfo = calculateNewTransactionInfo(shippingOptionData.id);
+    }
+
+    resolve(paymentDataRequestUpdate);
+  });
+}
+
+/**
+ * Helper function to create a new TransactionInfo object.
+
+ * @param string shippingOptionId respresenting the selected shipping option in the payment sheet.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function calculateNewTransactionInfo(shippingOptionId) {
+  let newTransactionInfo = getGoogleTransactionInfo();
+
+  let shippingCost = getShippingCosts()[shippingOptionId];
+  newTransactionInfo.displayItems.push({
+    type: "LINE_ITEM",
+    label: "Shipping cost",
+    price: shippingCost,
+    status: "FINAL"
+  });
+
+  let totalPrice = 0.00;
+  newTransactionInfo.displayItems.forEach(displayItem => totalPrice += parseFloat(displayItem.price));
+  newTransactionInfo.totalPrice = totalPrice.toString();
+
+  return newTransactionInfo;
+}
+
+/**
+ * Initialize Google PaymentsClient after Google-hosted JavaScript has loaded
+ *
+ * Display a Google Pay payment button after confirmation of the viewer's
+ * ability to pay.
+ */
+function onGooglePayLoaded() {
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.isReadyToPay(getGoogleIsReadyToPayRequest())
+      .then(function(response) {
+        if (response.result) {
+          addGooglePayButton();
+          // @todo prefetch payment data to improve performance after confirming site functionality
+          // prefetchGooglePaymentData();
+        }
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+
+/**
+ * Add a Google Pay purchase button alongside an existing checkout button
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ButtonOptions|Button options}
+ * @see {@link https://developers.google.com/pay/api/web/guides/brand-guidelines|Google Pay brand guidelines}
+ */
+function addGooglePayButton() {
+  const paymentsClient = getGooglePaymentsClient();
+  const button = paymentsClient.createButton({onClick: onGooglePaymentButtonClicked});
+  document.getElementById('container').appendChild(button);
+}
+
+/**
+ * Provide Google Pay API with a payment amount, currency, and amount status
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+let totalprice = document.getElementsByClassName('cart-total-price')[0].innerHTML
+let total = totalprice.replace('₪','')
+console.log(total)
+function getGoogleTransactionInfo() {
+  return {
+    displayItems: [
+      {
+        label: "Subtotal",
+        type: "SUBTOTAL",
+        price: "11.00",
+      },
+      {
+        label: "Tax",
+        type: "TAX",
+        price: "1.00",
+      }
+    ],
+    countryCode: 'IL',
+    currencyCode: "ILS",
+    totalPriceStatus: "FINAL",
+    totalPrice: "13",
+    totalPriceLabel: "Total"
+  };
+}
+
+/**
+ * Provide a key value store for shippping options.
+ */
+function getShippingCosts() {
+  return {
+    "shipping-001": "0.00",
+    "shipping-002": "1.99",
+    "shipping-003": "10.00"
+  }
+}
+
+/**
+ * Provide Google Pay API with shipping address parameters when using dynamic buy flow.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ShippingAddressParameters|ShippingAddressParameters}
+ * @returns {object} shipping address details, suitable for use as shippingAddressParameters property of PaymentDataRequest
+ */
+function getGoogleShippingAddressParameters() {
+  return  {
+    allowedCountryCodes: ['IL'],
+    phoneNumberRequired: true
+  };
+}
+
+/**
+ * Provide Google Pay API with shipping options and a default selected shipping option.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ShippingOptionParameters|ShippingOptionParameters}
+ * @returns {object} shipping option parameters, suitable for use as shippingOptionParameters property of PaymentDataRequest
+ */
+function getGoogleDefaultShippingOptions() {
+  return {
+    defaultSelectedOptionId: "shipping-001",
+    shippingOptions: [
+      {
+        "id": "shipping-001",
+        "label": "Free: Standard shipping",
+        "description": "Free Shipping delivered in 5 business days."
+      },
+      {
+        "id": "shipping-002",
+        "label": "$1.99: Standard shipping",
+        "description": "Standard shipping delivered in 3 business days."
+      },
+      {
+        "id": "shipping-003",
+        "label": "$10: Express shipping",
+        "description": "Express shipping delivered in 1 business day."
+      },
+    ]
+  };
+}
+
+/**
+ * Provide Google Pay API with a payment data error.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentDataError|PaymentDataError}
+ * @returns {object} payment data error, suitable for use as error property of PaymentDataRequestUpdate
+ */
+function getGoogleUnserviceableAddressError() {
+  return {
+    reason: "SHIPPING_ADDRESS_UNSERVICEABLE",
+    message: "Cannot ship to the selected address",
+    intent: "SHIPPING_ADDRESS"
+  };
+}
+
+/**
+ * Prefetch payment data to improve performance
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#prefetchPaymentData|prefetchPaymentData()}
+ */
+function prefetchGooglePaymentData() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  // transactionInfo must be set but does not affect cache
+  paymentDataRequest.transactionInfo = {
+    totalPriceStatus: 'NOT_CURRENTLY_KNOWN',
+    currencyCode: 'ILS'
+  };
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.prefetchPaymentData(paymentDataRequest);
+}
+
+
+
+/**
+ * Show Google Pay payment sheet when Google Pay payment button is clicked
+ */
+function onGooglePaymentButtonClicked() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.loadPaymentData(paymentDataRequest);
+}
+
+/**
+ * Process payment data returned by the Google Pay API
+ *
+ * @param {object} paymentData response from Google Pay API after user approves payment
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentData|PaymentData object reference}
+ */
+function processPayment(paymentData) {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      // show returned data in developer console for debugging
+      console.log(paymentData);
+      // @todo pass payment token to your gateway to process payment
+      paymentToken = paymentData.paymentMethodData.tokenizationData.token;
+
+      resolve({});
+    }, 3000);
+  });
+}
+  
+ 
+    
+  </script>
+     
+   
+  <script async
+        src="https://pay.google.com/gp/p/js/pay.js"
+        onload="onGooglePayLoaded()">
+      </script>
+</div>
+
+</section>
+
+
+
+
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
